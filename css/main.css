@@ -1,0 +1,617 @@
+﻿/*Các xử lí định dạng cho login.html*/
+
+@import url('basic.css');
+
+@import url('all.css');
+
+@import url('img.css');
+
+/*======================================
+
+
+
+/***************************HEADER***********************************/
+.header{
+	margin-left: 15px;
+	margin-right: 15px;
+	background: rgba(4,4,4,0.5);
+}
+
+
+
+
+/*----Search-----*/
+
+.header .search{
+	border-right: 1px solid #ddd;
+	color: #fff;
+}
+/*----Menu----*/
+.header .menu{
+	
+	box-shadow: 0 10px 10px rgba( 4,4,4, 0.2); 
+}
+
+.header .menu .nav-link{
+	padding-left: 20px !important;
+	padding-right: 20px !important;
+	color: yellow !important;
+}
+
+/***************************HEADER***********************************/
+.slider .mybg1{
+	background: rgba(0,0,0, 0.3);
+}
+/*--------------------------------------------------------------
+
+# Featured Services
+--------------------------------------------------------------*/
+.td_taigame{
+	margin-top:80px;
+	margin-bottom:40px;
+	text-align:center;
+	color:red;
+	box-shadow: 0 0 29px 0 rgba(68, 88, 144, 0.12);
+	border-radius: 15px;
+	background: black;
+}
+.featured-services .icon-box {
+	margin-top:50px;
+	margin-left:30px;
+	padding-left: 30px;
+	width:250px;
+	position: relative;
+	overflow: hidden;
+	background: red;
+	box-shadow: 0 0 29px 0 rgba(68, 88, 144, 0.12);
+	transition: all 0.3s ease-in-out;
+	border-radius: 45px;
+	z-index: 1;
+}
+
+.featured-services .icon-box::before {
+	content: '';
+	position: absolute;
+	background: yellow;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	top: 100%;
+	transition: all 0.3s;
+	z-index: -1;
+}
+
+.featured-services .icon-box:hover::before {
+	background: #106eea;
+	top: 0;
+	border-radius: 0px;
+}
+
+.featured-services .icon {
+	margin-bottom: 15px;
+	font-size:120px;
+	margin-top:22px;
+}
+
+.featured-services .icon i {
+	font-size: 48px;
+	line-height: 1;
+	color: #106eea;
+	transition: all 0.3s ease-in-out;
+}
+
+.featured-services .title {
+	font-weight: 700;
+	margin-bottom: 15px;
+	font-size: 22px;
+	margin-left:15px;
+	margin-top:20px;
+	
+}
+
+.featured-services .title a {
+	color: white;
+}
+
+.featured-services .description {
+	font-size: 15px;
+	line-height: 28px;
+	margin-bottom: 0;
+}
+
+.featured-services .icon-box:hover .title a, .featured-services .icon-box:hover .description {
+	color: #fff;
+}
+
+.featured-services .icon-box:hover .icon i {
+	color: #fff;
+}
+
+/*--------------------------------------------------------------
+
+
+# Featured
+--------------------------------------------------------------*/
+.featured .icon-box1 {
+  
+	position: relative;
+	overflow: hidden;
+	padding-top:50px;
+  
+	transition: all 0.3s ease-in-out;
+	border-radius: 8px;
+	z-index: 1;
+}
+
+
+
+
+
+
+.
+/*--------------------------------------------------------------
+
+
+/***************************FOCUS-NEWS***********************************/
+.focus-news .crop-img1{
+	max-height: 190px;
+	overflow: hidden;/*khi vượt quá độ cao cắt bớt*/
+}
+
+.focus-news a h5{
+	text-align: justify;
+}
+
+/******* SECTIONS *********/
+
+
+
+.sections .cropimg2{
+	width: 250px;
+	max-height: 180px;
+	overflow: hidden;/*chỉnh không bị méo ảnh*/
+}
+.sections .cropimg2 img{
+	width: 100%;/*chỉnh không bị méo ảnh*/
+}
+
+.sections .crop-img3{
+	
+	max-height: 300px;
+	overflow: hidden;/*chỉnh không bị méo ảnh*/
+}
+
+.siz{
+	margin-top:20px;
+}
+.siz a{
+	color:red;
+}
+
+.slider1{
+	margin-top:50px;
+}
+
+.nav-item1{
+	background:yellow;
+}
+.nav-item1 a{
+	color:red;
+}
+.nav-item1:hover{
+	background:red;
+}
+.nav-item1 a:hover{
+	color:yellow;
+}
+
+/*--------------------------------------------------------------
+# Card General
+--------------------------------------------------------------*/
+@media (max-width: 767px) {
+  .card-box-a,
+  .card-box-b,
+  .card-box-c,
+  .card-box-d {
+    margin-bottom: 2.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .grid .card-box-a,
+  .grid .card-box-b,
+  .grid .card-box-c,
+  .grid .card-box-d {
+    margin-bottom: 2.5rem;
+  }
+}
+
+.card-box-a,
+.card-box-b,
+.card-box-d {
+  position: relative;
+  overflow: hidden;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.card-box-a .img-a,
+.card-box-a .img-b,
+.card-box-b .img-a,
+.card-box-b .img-b {
+  transition: .8s all ease-in-out;
+}
+
+@media (min-width: 768px) {
+  .card-box-a:hover .img-a,
+  .card-box-a:hover .img-b,
+  .card-box-b:hover .img-a,
+  .card-box-b:hover .img-b {
+    transform: scale(1.2);
+  }
+}
+
+@media (min-width: 768px) {
+  .card-box-a .price-a,
+  .card-box-b .price-a {
+    font-size: .9rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .card-box-a .price-a,
+  .card-box-b .price-a {
+    font-size: 1rem;
+  }
+}
+
+.card-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.card-shadow {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.card-shadow:before {
+  content: ' ';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 27%, rgba(0, 0, 0, 0.65) 90%);
+}
+
+/*======================================
+//--//-->   PROPERTY - CARD-A
+======================================*/
+@media (min-width: 768px) {
+  .card-box-a:hover .card-overlay-a-content {
+    bottom: 60px;
+  }
+}
+
+@media (min-width: 768px) and (min-width: 768px) {
+  .card-box-a:hover .card-overlay-a-content {
+    bottom: 60px;
+  }
+}
+
+@media (min-width: 768px) and (min-width: 992px) {
+  .card-box-a:hover .card-overlay-a-content {
+    bottom: 64px;
+  }
+}
+
+@media (min-width: 768px) {
+  .card-box-a:hover .card-body-a {
+    padding-bottom: 1rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .card-box-a .card-overlay-a-content {
+    bottom: 65px;
+  }
+  .card-box-a .card-body-a {
+    padding-bottom: 1rem;
+  }
+}
+
+.card-overlay-a-content {
+  transition: all .5s ease-in;
+  position: absolute;
+  width: 100%;
+  bottom: 0px;
+  z-index: 2;
+}
+
+@media (min-width: 768px) {
+  .card-overlay-a-content {
+    bottom: -20px;
+  }
+}
+
+@media (min-width: 992px) {
+  .card-overlay-a-content {
+    bottom: 0px;
+  }
+}
+
+.card-header-a {
+  padding: 0 1rem;
+}
+
+.card-header-a .card-title-a {
+  color: #ffffff;
+  margin-bottom: 0;
+  padding-bottom: .7rem;
+}
+
+@media (min-width: 768px) {
+  .card-header-a .card-title-a {
+    font-size: 1.3rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .card-header-a .card-title-a {
+    font-size: 2rem;
+  }
+}
+
+.card-header-a .card-title-a a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.card-body-a {
+  z-index: 2;
+  transition: all .5s ease-in;
+  padding: 0rem 1rem 2rem 1rem;
+}
+
+.card-body-a .price-box {
+  padding-bottom: .5rem;
+}
+
+.price-a {
+  color: #ffffff;
+  padding: .6rem .8rem;
+  border: 2px solid #2eca6a;
+  border-radius: 50px;
+  text-transform: uppercase;
+  letter-spacing: 0.030em;
+}
+
+.card-footer-a {
+  width: 100%;
+  position: absolute;
+  z-index: 2;
+  background-color: #2eca6a;
+}
+
+.card-info {
+  list-style: none;
+  margin-bottom: 0;
+  padding: .5rem 0;
+}
+
+.card-info .card-info-title {
+  font-size: 1rem;
+  color: #313131;
+}
+
+@media (min-width: 768px) {
+  .card-info .card-info-title {
+    font-size: .9rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .card-info .card-info-title {
+    font-size: 1rem;
+  }
+}
+
+.card-info li span {
+  color: #ffffff;
+  font-size: .9rem;
+}
+
+@media (min-width: 768px) {
+  .card-info li span {
+    font-size: .8rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .card-info li span {
+    font-size: 1rem;
+  }
+}
+.intro-single{
+	margin-top:80px;
+}
+
+/* ---------LOGIN-----*/
+.loginview{
+	
+	height: auto;/*vh:độ cao màn hình*/
+	
+	background: #eee;
+	
+	box-shadow: 5px 5px 10px #555; /*đổ bóng x y r màu*/
+	
+	border-radius: 10px;/*bán kính lượn góc*/
+}
+
+.loginview .title{
+	background: #555;
+	color: #fff;
+	text-transform: uppercase;
+	padding: 10px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+	.loginview label{
+		text-align: left !important;
+		font-weight: 700;
+	}
+}
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px) {
+	.loginview label{
+		text-align: left !important;
+		font-weight: 700;
+	}
+}
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+	.loginview label{
+		text-align: left !important;
+		font-weight: 700;
+	}
+}
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199.98px) {
+	.loginview label{
+		text-align: left !important;
+		font-weight: 700;
+	}
+}
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+	.loginview label{
+		text-align: left !important;
+		font-weight: 700;
+	}
+}
+/*-----------------------------*/
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+	.header .top{
+		display: none;
+	}
+	
+	.header .search{
+		display: none;
+	}
+	
+	.focus-news h2, .sections h2{
+		font-size: 23px !important;
+	}
+	
+	.sections .cropimg2{
+		width: 30vw;/*so độ rộng đt bằng 30%*/
+		max-height: 25vh;/*so độ cao đt bằng 25%*/
+	}
+	
+	.sections .media-body h5{
+		font-size: 18px !important
+	}
+	
+	.ask .display-4{
+		font-size: 30px;
+	}
+	
+	.ask .display-6{
+		font-size: 25px;
+	}
+	.td_taigame{
+		margin-top:30px;
+		margin-bottom:15px;
+	}
+	.slider1{
+	margin-top:25px;
+	}
+	.siz{
+		margin-top:10px;
+	}
+	.featured-services .icon-box {
+	margin-top:15px;
+	margin-left:40px;
+	}
+	.featured .icon-box1 {
+		padding-top:5px;
+		padding-left:40px;
+	}
+	.card-footer-a{
+		display:none;
+	}
+}
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px) {
+	.header .top{
+		display: none;
+	}
+	
+	.header .search{
+		display: none;
+	}
+	
+	.focus-news h2{
+		font-size: 23px !important;
+	}
+	
+	.focus-news .crop-img1{
+		max-height: 120px;
+	}
+	
+	.focus-news a h5{
+		font-size: 18px;
+	}
+	.td_taigame{
+		margin-top:20px;
+		margin-bottom:15px;
+	}
+	.slider1{
+	margin-top:25px;
+	}
+	.siz{
+		margin-top:10px;
+	}
+	.featured-services .icon-box {
+	margin-top:15px;
+	margin-left:40px;
+	}
+	.featured .icon-box1 {
+		padding-top:5px;
+		padding-left:40px;
+	}
+	.card-footer-a{
+		display:none;
+	}
+	
+}
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+	
+}
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199.98px) {
+	
+}
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+	
+}
+
